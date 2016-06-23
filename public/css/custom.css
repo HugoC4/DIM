@@ -15,3 +15,7 @@
 .event-new-box {
     width: 800px;
 }
+
+.info-box-icon > i.fa {
+    line-height: 2;
+}

@@ -8,7 +8,7 @@
             <b>Nieuw evenement</b>
         </div>
         <div class="login-box-body">
-            {!! Form::open(array('action' => 'BackendController@EventNewPost', 'method' => 'POST')) !!}
+            {!! Form::open(array('action' => 'EventController@EventNewPost', 'method' => 'POST')) !!}
                 <div class="col-md-6">
                     <span class="control-label">Evenement naam/titel</span>
                     <div class="form-group">

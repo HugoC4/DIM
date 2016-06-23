@@ -2,6 +2,8 @@
 {{ Html::script('js/bootstrap.min.js') }}
 {{ Html::script('js/datepicker/bootstrap-datepicker.js') }}
 {{ Html::script('js/datepicker/locales/bootstrap-datepicker.nl.js') }}
+{{ Html::script('js/datepicker/locales/bootstrap-datepicker.nl.js') }}
+{{ Html::script('js/app.min.js') }}
 
 <script>
     $(function() {

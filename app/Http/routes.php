@@ -25,8 +25,8 @@ Route::group(['as' => 'backend::'], function () {
 		Route::get('backend/dashboard', ['as' => 'dashboard', "uses" => "BackendController@Dashboard"]);
 		return;
 	}
-	Route::get('backend/dashboard', ['as' => 'dashboard', "uses" => "BackendController@Dashboard"]);
-	Route::get('backend/event/new', ['as' => 'dashboard', "uses" => "BackendController@EventNew"]);
-	Route::post('backend/event/new', ['as' => 'dashboard', 'before' => 'csrf', "uses" => "BackendController@EventNewPost"]);
-	Route::get('backend/event/{id}', ['as' => 'dashboard', "uses" => "BackendController@EventOverview"]);
+	Route::get('backend/events', ['as' => 'dashboard', "uses" => "EventController@Events"]);
+	Route::get('backend/event/new', ['as' => 'dashboard', "uses" => "EventController@EventNew"]);
+	Route::post('backend/event/new', ['as' => 'dashboard', 'before' => 'csrf', "uses" => "EventController@EventNewPost"]);
+	Route::get('backend/event/{id}', ['as' => 'dashboard', "uses" => "EventController@EventOverview"]);
 });
