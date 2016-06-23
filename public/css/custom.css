@@ -1,0 +1,17 @@
+.subTitle {
+    font-size: 50%;
+}
+
+.login-page {
+    background-image: url('../images/bg.jpg');
+}
+
+.center {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.event-new-box {
+    width: 800px;
+}
