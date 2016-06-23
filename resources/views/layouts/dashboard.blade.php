@@ -6,15 +6,18 @@
     <div class="wrapper">
 
         <header class="main-header">
+            <a href="{{ action("EventController@Events", []) }}">
+                <i class="fa fa-fw fa-chevron-left backButton"></i>
+            </a>
             <!-- Logo -->
-            <a href="#" class="logo">
+            <span href="#" class="logo">
                 <!-- mini logo for sidebar mini 50x50 pixels -->
-                <span class="logo-mini"><b>DIM</b></span>
+                <span class="logo-mini"><b>&nbsp;&nbsp;D</b></span>
                 <!-- logo for regular state and mobile devices -->
                 <span class="logo-lg">
                     <b>DIM</b>
                 </span>
-            </a>
+            </span>
             <nav class="navbar navbar-static-top">
                 <!-- Sidebar toggle button-->
                 <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">

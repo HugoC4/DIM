@@ -19,3 +19,10 @@
 .info-box-icon > i.fa {
     line-height: 2;
 }
+
+.backButton {
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    margin-top: 15px;
+}
