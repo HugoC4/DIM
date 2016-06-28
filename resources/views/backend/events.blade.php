@@ -3,6 +3,11 @@
 @section('title', 'Dashboard')
 @section('bodyClasses', 'hold-transition login-page')
 @section('layout')
+    <div class="logout">
+        <a href="{!! action("BackendController@Logout", []) !!}">
+            Logout <i class="fa fa-sign-out"></i>
+        </a>
+    </div>
     <div class="login-box">
         <div class="login-logo">
             <b>Evenementen</b>

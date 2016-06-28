@@ -2,6 +2,10 @@
 
 @section('title', 'Dashboard')
 @section('bodyClasses', 'hold-transition skin-purple-light sidebar-mini')
+
+@section('menu')
+    @include('backend.event.menu')
+@endsection
 @section('layout')
     <div class="wrapper">
 

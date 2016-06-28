@@ -10,7 +10,7 @@
             <i class="subTitle">Da Vinci's Inschrijvingen Manager</i>
         </div>
         <div class="login-box-body">
-            <p class="login-box-msg">Sign in to start your session</p>
+            <p class="login-box-msg">Log in om evenementen te beheren</p>
 
             {!! Form::open(array('action' => 'BackendController@LoginPost', 'method' => 'POST')) !!}
                 <div class="form-group has-feedback">

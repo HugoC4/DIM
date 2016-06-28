@@ -21,6 +21,11 @@ class Controller extends BaseController
         $this->db->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
     }
 
+    protected function delete($query, $params) {
+        $stmt = $this->db->prepare($query);
+        return $stmt->execute($params);
+    }
+
     protected function update($query, $params) {
         $stmt = $this->db->prepare($query);
         return $stmt->execute($params);
@@ -37,5 +42,17 @@ class Controller extends BaseController
         $stmt = $this->db->prepare($query);
         $stmt->execute($statements);
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+
+    protected function _auth() {
+        return isset($_SESSION["admin_id"]);
+    }
+
+    protected function _redlog() {
+        return redirect()->action("BackendController@Login");
+    }
+
+    protected function _redevt() {
+        return redirect()->action("EventController@Events");
     }
 }

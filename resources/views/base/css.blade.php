@@ -7,5 +7,6 @@
 {{ Html::style('css/AdminLTE.min.css') }}
 {{ Html::style('css/skins/skin-purple-light.min.css') }}
 {{ Html::style('css/datepicker3.css') }}
+{{ Html::style('css/iCheck/square/blue.css') }}
 {{ Html::style('css/custom.css') }}
 @yield('css', '')
