@@ -11,10 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Route::group(['as' => 'backend::'], function () {
 
 	Route::get('backend/login', ['as' => 'login', "uses" => "BackendController@Login"]);
@@ -42,3 +38,9 @@ Route::group(['as' => 'backend::'], function () {
 		return redirect()->action('BackendController@Login');
 	}]);
 });
+
+
+	Route::get('', ['as' => 'event_overview', "uses" => "FrontEndController@Events"]);
+
+	Route::get('{id}', ['as' => 'event_overview', "uses" => "FrontEndController@SignUp"]);
+	Route::post('{id}', ['as' => 'event_overview', "uses" => "FrontEndController@SignUpPost"]);
